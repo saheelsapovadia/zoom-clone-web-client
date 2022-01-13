@@ -94,7 +94,7 @@ body {
       }
       .btn-disabled {
         cursor: unset;
-        pointer-events: all;
+        pointer-events: none;
         background-color: #e7e7e7;
         color: rgb(121, 119, 119);
         &:hover {
@@ -178,6 +178,24 @@ body {
         text-decoration: underline;
         cursor: pointer;
       }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .join-form {
+    max-width: 350px;
+  }
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+
+    span {
+      flex-direction: column;
+      padding: 6px;
+    }
+    .action-btns div {
+      margin: 6px 10px;
     }
   }
 }
